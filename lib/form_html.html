@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style></style>
+  </head>
+  <body>
+    <form id="myForm">
+      Enter name: <input type="text" />
+      <input type="submit" />
+    </form>
+    <script type="text/javascript">
+      var form = document.getElementById("myForm");
+      function onSubmit(event) {
+        console.log("Hi");
+        event.preventDefault();
+        
+      }
+      form.addEventListener("submit", onSubmit);
+    </script>
+  </body>
+</html>
